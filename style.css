@@ -44,8 +44,13 @@ body{
     box-shadow: -1rem 0 3rem #000;
     transition: .5s;
 }
+.card img{
+    object-fit: cover;
+    height: 300px;
+}
 .card:hover{
     transform: translateY(-1rem);
+    background-color: #7a7a8c;
 }
 
 .card:hover~.card{
@@ -64,17 +69,17 @@ body{
 }
 .author-avatar img{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    filter: grayscale(100%);
     margin: 16px 10px;
+    object-fit: cover;
 }
 
 .half-circle{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 5px;
     width: 60px;
     height: 48px;
     fill: none;
